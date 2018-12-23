@@ -43,4 +43,18 @@ class LinkedList
     
     count
   end
+
+  # Returns the first node in the list
+  def head
+    @head
+  end
+
+  def tail
+      node = @head
+      loop do
+        break if node.next.nil?
+        node = node.next
+      end
+      node
+  end
 end
