@@ -49,12 +49,23 @@ class LinkedList
     @head
   end
 
+  # Returns the last node in the list
   def tail
-      node = @head
-      loop do
-        break if node.next.nil?
-        node = node.next
-      end
-      node
+    node = @head
+    loop do
+      break if node.next.nil?
+      node = node.next
+    end
+    node
+  end
+
+  # Returns the node at a given index
+  def at(index)
+    node = @head
+    0.upto(index - 1) do |i|
+      break if node.next.nil?
+      node = node.next
+    end
+    node
   end
 end
