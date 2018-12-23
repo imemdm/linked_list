@@ -68,4 +68,22 @@ class LinkedList
     end
     node
   end
+
+  # Removes the last element from the list
+  def pop
+    if self.size == 1
+      @head = nil
+    else
+      node = @head
+      prev = @head
+      loop do
+        if node.next.nil?
+          prev.next = nil
+          break
+        end
+        prev = node
+        node = node.next
+      end
+    end
+  end
 end
