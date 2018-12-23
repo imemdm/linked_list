@@ -28,4 +28,19 @@ class LinkedList
       @head.next = temp
     end
   end
+
+  # Returns the total number of nodes in the list
+  def size
+    count = 0
+    unless @head.nil?
+      current = @head
+      loop do
+        count += 1
+        break if current.next.nil?
+        current = current.next
+      end
+    end
+    
+    count
+  end
 end

@@ -9,9 +9,10 @@ node_3 = Node.new(3)
 node_4 = Node.new(4)
 
 list.append(node_1)
+puts list.size
 list.append(node_2)
-list.append(node_3)
-
+puts list.size
 list.prepend(node_4)
+puts list.size
 
 p list
