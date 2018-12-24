@@ -86,4 +86,20 @@ class LinkedList
       end
     end
   end
+
+  # Returns true if the passed value is in the list,
+  # and otherwise returns false
+  def contains?(val)
+    result = false
+    node = @head
+    loop do
+      if node.value == val
+        result = true
+        break
+      end
+      break if node.next.nil?
+      node = node.next
+    end
+    result
+  end
 end

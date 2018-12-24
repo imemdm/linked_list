@@ -11,10 +11,12 @@ node_4 = Node.new(4)
 list.append(node_1)
 list.append(node_2)
 list.append(node_3)
+list.append(node_4)
 
 
-p list
+p list.contains?(3)
+p list.contains?(4)
+p list.contains?(nil)
 
-list.pop
 
 p list
