@@ -120,4 +120,25 @@ class LinkedList
     end
     result
   end
+
+  # Represents LinkedList objects as strings
+  def to_s
+    string = ""
+    node = @head
+
+    if @head.nil?
+      string = "nil"
+    else
+      loop do
+        string += "#{node.to_s} -> "
+        if node.next.nil?
+          string += "nil"
+          break
+        end
+        
+        node = node.next
+      end
+    end
+    string
+  end
 end

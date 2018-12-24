@@ -13,7 +13,4 @@ list.append(node_2)
 list.append(node_3)
 list.append(node_4)
 
-
-p list.find(4)
-
-p list
+p list.to_s
