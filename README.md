@@ -1,1 +1,1 @@
-# linked_list
+# Linked List implementation in Ruby
