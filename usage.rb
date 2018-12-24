@@ -14,6 +14,6 @@ list.append(node_3)
 
 p list.to_s
 
-list.insert_at(3, node_4)
+list.remove_at(1)
 
 p list.to_s
