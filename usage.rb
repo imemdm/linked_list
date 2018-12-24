@@ -11,6 +11,9 @@ node_4 = Node.new(4)
 list.append(node_1)
 list.append(node_2)
 list.append(node_3)
-list.append(node_4)
+
+p list.to_s
+
+list.insert_at(3, node_4)
 
 p list.to_s

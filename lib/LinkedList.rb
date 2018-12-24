@@ -141,4 +141,31 @@ class LinkedList
     end
     string
   end
+
+  # Inserts node at the given index
+  def insert_at(index, node)
+    if index >= self.size
+      raise "Index out of range"
+    else
+      current = @head
+      prev = @head
+      count = 0
+      loop do
+        break if count == index
+        prev = current
+        current = current.next
+        count += 1
+      end
+      
+      temp_next = prev.next
+      
+      if count == 0
+        self.prepend(node)
+      else
+        prev.next = node
+      end
+
+      node.next = temp_next
+    end
+  end
 end
