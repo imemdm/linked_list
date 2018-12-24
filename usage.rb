@@ -14,9 +14,6 @@ list.append(node_3)
 list.append(node_4)
 
 
-p list.contains?(3)
-p list.contains?(4)
-p list.contains?(nil)
-
+p list.find(4)
 
 p list
